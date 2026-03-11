@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Terms & Privacy Policy — Imran X Dynamic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================================
+       VARIABLES & RESET
+    ============================================================ */
+    :root {
+      --gold-light:   #f5c842;
+      --gold:         #d4a017;
+      --gold-dark:    #a07010;
+      --gold-glow:    rgba(212, 160, 23, 0.35);
+      --brown-light:  #c89060;
+      --brown:        #7a4f2d;
+      --brown-dark:   #3e2010;
+      --blue-deep:    #050e2a;
+      --blue-mid:     #0a1840;
+      --blue-card:    #0d2050;
+      --blue-accent:  #1a3a7a;
+      --glass-bg:     rgba(10, 24, 64, 0.70);
+      --glass-border: rgba(212, 160, 23, 0.20);
+      --text-primary: #f0e6cc;
+      --text-gold:    #f5c842;
+      --text-muted:   rgba(240, 230, 204, 0.55);
+      --text-body:    rgba(240, 230, 204, 0.82);
+      --danger:       #e05050;
+      --success:      #50c878;
+      --radius-lg:    20px;
+      --radius-md:    14px;
+      --radius-sm:    10px;
+      --shadow-gold:  0 0 30px rgba(212,160,23,0.12), 0 8px 32px rgba(5,14,42,0.6);
+      --transition:   all 0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--blue-deep);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.75;
+    }
+
+    /* ── Background mesh ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 15% 5%,  rgba(212,160,23,0.07) 0%, transparent 55%),
+        radial-gradient(ellipse 60% 80% at 85% 95%,  rgba(26,58,122,0.16) 0%, transparent 55%),
+        radial-gradient(ellipse 100% 100% at 50% 50%, rgba(5,14,42,1) 0%, rgba(10,24,64,0.96) 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(212,160,23,0.022) 40px),
+        repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(212,160,23,0.022) 40px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ============================================================
+       LAYOUT WRAPPER
+    ============================================================ */
+    .page-wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 18px 80px;
+    }
+
+    /* ============================================================
+       STICKY TOP NAV
+    ============================================================ */
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(5,14,42,0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(212,160,23,0.14);
+      padding: 13px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .nav-brand {
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+      background: linear-gradient(135deg, var(--gold-light), var(--brown-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      white-space: nowrap;
+    }
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(212,160,23,0.08);
+      border: 1px solid rgba(212,160,23,0.22);
+      border-radius: 10px;
+      color: var(--gold);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 7px 14px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+    .nav-back:hover {
+      background: rgba(212,160,23,0.18);
+    }
+
+    /* ============================================================
+       PAGE HERO
+    ============================================================ */
+    .page-hero {
+      text-align: center;
+      padding: 50px 0 36px;
+      animation: fadeInUp 0.55s cubic-bezier(0.4,0,0.2,1);
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(212,160,23,0.1);
+      border: 1px solid rgba(212,160,23,0.28);
+      border-radius: 30px;
+      padding: 6px 16px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .hero-title {
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: clamp(1.6rem, 6vw, 2.6rem);
+      background: linear-gradient(135deg, var(--gold-light) 0%, var(--brown-light) 50%, var(--gold) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+    .hero-sub {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .hero-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 22px;
+      flex-wrap: wrap;
+    }
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    .hero-meta-item span:first-child { font-size: 1rem; }
+
+    /* ============================================================
+       TABLE OF CONTENTS
+    ============================================================ */
+    .toc-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      padding: 24px 22px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-gold);
+      animation: fadeInUp 0.6s 0.1s both;
+    }
+    .toc-title {
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .toc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .toc-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border-radius: var(--radius-sm);
+      background: rgba(212,160,23,0.05);
+      border: 1px solid rgba(212,160,23,0.1);
+      text-decoration: none;
+      color: var(--text-body);
+      font-size: 0.82rem;
+      transition: var(--transition);
+    }
+    .toc-link:hover {
+      background: rgba(212,160,23,0.12);
+      border-color: rgba(212,160,23,0.3);
+      color: var(--gold-light);
+    }
+    .toc-num {
+      font-family: 'Cinzel', serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--gold-dark);
+      min-width: 20px;
+    }
+
+    /* ============================================================
+       SECTION CARDS
+    ============================================================ */
+    .doc-section {
+      background: var(--glass-bg);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-gold);
+      scroll-margin-top: 80px;
+      animation: fadeInUp 0.5s both;
+    }
+    .doc-section:nth-child(2)  { animation-delay: 0.05s; }
+    .doc-section:nth-child(3)  { animation-delay: 0.10s; }
+    .doc-section:nth-child(4)  { animation-delay: 0.15s; }
+    .doc-section:nth-child(5)  { animation-delay: 0.18s; }
+    .doc-section:nth-child(6)  { animation-delay: 0.21s; }
+    .doc-section:nth-child(7)  { animation-delay: 0.24s; }
+    .doc-section:nth-child(8)  { animation-delay: 0.27s; }
+    .doc-section:nth-child(9)  { animation-delay: 0.30s; }
+    .doc-section:nth-child(10) { animation-delay: 0.33s; }
+    .doc-section:nth-child(11) { animation-delay: 0.36s; }
+    .doc-section:nth-child(12) { animation-delay: 0.38s; }
+
+    /* Section header */
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 18px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(212,160,23,0.12);
+    }
+    .section-num {
+      flex-shrink: 0;
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cinzel', serif;
+      font-weight: 900;
+      font-size: 0.85rem;
+      color: var(--blue-deep);
+      box-shadow: 0 0 14px var(--gold-glow);
+      margin-top: 2px;
+    }
+    .section-heading-wrap {}
+    .section-tag {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      margin-bottom: 2px;
+    }
+    .section-heading {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(1rem, 3.5vw, 1.2rem);
+      font-weight: 700;
+      color: var(--gold-light);
+      line-height: 1.2;
+    }
+
+    /* Body content */
+    .doc-body { color: var(--text-body); font-size: 0.93rem; line-height: 1.8; }
+
+    .doc-body p { margin-bottom: 14px; }
+    .doc-body p:last-child { margin-bottom: 0; }
+
+    .doc-body strong {
+      color: var(--gold-light);
+      font-weight: 600;
+    }
+
+    .doc-body em {
+      color: var(--brown-light);
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    /* Highlight box */
+    .highlight-box {
+      background: rgba(212,160,23,0.07);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin: 16px 0;
+      font-size: 0.88rem;
+      color: var(--text-body);
+    }
+    .highlight-box.info {
+      background: rgba(26,58,122,0.25);
+      border-color: rgba(100,140,255,0.5);
+    }
+    .highlight-box.warn {
+      background: rgba(224,80,80,0.08);
+      border-color: rgba(224,80,80,0.45);
+      color: rgba(240,200,200,0.88);
+    }
+    .highlight-box.success {
+      background: rgba(80,200,120,0.07);
+      border-color: rgba(80,200,120,0.4);
+    }
+
+    /* List styles */
+    .doc-list {
+      list-style: none;
+      margin: 12px 0 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .doc-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--text-body);
+      line-height: 1.6;
+    }
+    .doc-list li::before {
+      content: '◆';
+      color: var(--gold-dark);
+      font-size: 0.55rem;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+    .doc-list.check li::before { content: '✓'; color: var(--success); font-size: 0.85rem; margin-top: 1px; }
+    .doc-list.cross li::before  { content: '✕'; color: var(--danger);  font-size: 0.85rem; margin-top: 1px; }
+
+    /* Sub list */
+    .sub-list {
+      list-style: none;
+      margin: 8px 0 4px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .sub-list li {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: flex;
+      gap: 8px;
+    }
+    .sub-list li::before { content: '–'; color: var(--gold-dark); }
+
+    /* Table */
+    .doc-table-wrap { overflow-x: auto; margin: 16px 0; border-radius: var(--radius-sm); }
+    .doc-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.86rem;
+    }
+    .doc-table th {
+      background: rgba(212,160,23,0.12);
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 11px 14px;
+      text-align: left;
+      border-bottom: 1px solid rgba(212,160,23,0.2);
+    }
+    .doc-table td {
+      padding: 10px 14px;
+      color: var(--text-body);
+      border-bottom: 1px solid rgba(212,160,23,0.07);
+      vertical-align: top;
+    }
+    .doc-table tr:hover td { background: rgba(212,160,23,0.04); }
+    .doc-table tr:last-child td { border-bottom: none; }
+
+    /* Code / monospace */
+    .code-inline {
+      background: rgba(5,14,42,0.7);
+      border: 1px solid rgba(212,160,23,0.15);
+      border-radius: 5px;
+      padding: 2px 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.82em;
+      color: var(--brown-light);
+    }
+
+    /* Section divider */
+    .section-divider {
+      text-align: center;
+      margin: 30px 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-divider::before,
+    .section-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(212,160,23,0.2), transparent);
+    }
+    .divider-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      white-space: nowrap;
+    }
+
+    /* ============================================================
+       CONTACT / FOOTER CARD
+    ============================================================ */
+    .contact-card {
+      background: linear-gradient(135deg, rgba(212,160,23,0.1) 0%, rgba(26,58,122,0.2) 100%);
+      border: 1px solid rgba(212,160,23,0.22);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .contact-card .contact-icon { font-size: 2.2rem; margin-bottom: 10px; }
+    .contact-card h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      margin-bottom: 8px;
+    }
+    .contact-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+    .contact-email {
+      display: inline-block;
+      background: rgba(212,160,23,0.1);
+      border: 1px solid rgba(212,160,23,0.3);
+      border-radius: 30px;
+      padding: 8px 22px;
+      font-size: 0.88rem;
+      color: var(--gold);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    .contact-email:hover {
+      background: rgba(212,160,23,0.2);
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid rgba(212,160,23,0.1);
+      margin-top: 10px;
+    }
+    footer p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    footer strong { color: var(--gold); }
+
+    /* ============================================================
+       SCROLL-TO-TOP
+    ============================================================ */
+    #scroll-top {
+      position: fixed;
+      bottom: 24px;
+      right: 20px;
+      width: 44px; height: 44px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      border: none;
+      border-radius: 50%;
+      color: var(--blue-deep);
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 4px 16px var(--gold-glow);
+      z-index: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
+    }
+    #scroll-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: all;
+    }
+    #scroll-top:hover { transform: translateY(-2px) scale(1.08); }
+
+    /* ============================================================
+       ANIMATIONS
+    ============================================================ */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 520px) {
+      .toc-grid { grid-template-columns: 1fr; }
+      .doc-section { padding: 22px 18px; }
+      .hero-meta { gap: 12px; }
+    }
+    @media (min-width: 600px) {
+      .page-wrapper { padding: 0 28px 80px; }
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(212,160,23,0.22); border-radius: 3px; }
+    ::selection { background: rgba(212,160,23,0.28); color: var(--text-primary); }
+  </style>
+</head>
+<body>
+
+<!-- ================================================================
+     SCROLL-TO-TOP BUTTON
+================================================================ -->
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+
+<!-- ================================================================
+     STICKY TOP NAV
+================================================================ -->
+<nav class="top-nav">
+  <div class="nav-brand">⚡ Imran X Dynamic</div>
+  <a href="index.html" class="nav-back">← Back to App</a>
+</nav>
+
+<div class="page-wrapper">
+
+  <!-- ================================================================
+       PAGE HERO
+  ================================================================ -->
+  <div class="page-hero">
+    <div class="hero-badge">📜 Legal Documents</div>
+    <h1 class="hero-title">Terms &amp; Conditions<br/>Privacy Policy</h1>
+    <p class="hero-sub">
+      Please read these documents carefully before using Imran X Dynamic.
+      By accessing or using this application, you agree to be bound by the terms described below.
+    </p>
+    <div class="hero-meta">
+      <div class="hero-meta-item"><span>📅</span><span>Effective Date: January 1, 2025</span></div>
+      <div class="hero-meta-item"><span>🔄</span><span>Last Updated: March 2025</span></div>
+      <div class="hero-meta-item"><span>🌐</span><span>Jurisdiction: India</span></div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       TABLE OF CONTENTS
+  ================================================================ -->
+  <div class="toc-card">
+    <div class="toc-title">📋 Table of Contents</div>
+    <div class="toc-grid">
+      <a href="#sec-1"  class="toc-link"><span class="toc-num">01</span>Introduction</a>
+      <a href="#sec-2"  class="toc-link"><span class="toc-num">02</span>Acceptance of Terms</a>
+      <a href="#sec-3"  class="toc-link"><span class="toc-num">03</span>What This App Does</a>
+      <a href="#sec-4"  class="toc-link"><span class="toc-num">04</span>User Responsibilities</a>
+      <a href="#sec-5"  class="toc-link"><span class="toc-num">05</span>Password &amp; Security</a>
+      <a href="#sec-6"  class="toc-link"><span class="toc-num">06</span>Data We Collect</a>
+      <a href="#sec-7"  class="toc-link"><span class="toc-num">07</span>How Data Is Stored</a>
+      <a href="#sec-8"  class="toc-link"><span class="toc-num">08</span>UPI &amp; Payments</a>
+      <a href="#sec-9"  class="toc-link"><span class="toc-num">09</span>QR Codes &amp; APIs</a>
+      <a href="#sec-10" class="toc-link"><span class="toc-num">10</span>Advertisements</a>
+      <a href="#sec-11" class="toc-link"><span class="toc-num">11</span>Liability &amp; Disclaimers</a>
+      <a href="#sec-12" class="toc-link"><span class="toc-num">12</span>Intellectual Property</a>
+      <a href="#sec-13" class="toc-link"><span class="toc-num">13</span>Changes to Terms</a>
+      <a href="#sec-14" class="toc-link"><span class="toc-num">14</span>Contact Us</a>
+    </div>
+  </div>
+
+  <!-- ====== PART 1: TERMS & CONDITIONS DIVIDER ====== -->
+  <div class="section-divider">
+    <span class="divider-label">Part I — Terms &amp; Conditions</span>
+  </div>
+
+  <!-- ================================================================
+       SECTION 1 — Introduction
+  ================================================================ -->
+  <div class="doc-section" id="sec-1">
+    <div class="section-header">
+      <div class="section-num">01</div>
+      <div class="section-heading-wrap">
+        <div class="section-tag">Terms &amp; Conditions</div>
+        <div class="section-heading">Introduction &amp; Overview</div>
+      </div>
+    </div>
+    <div class="doc-body">
+      <p>
+        Welcome to <strong>Imran X Dynamic</strong> — a lightweight, mobile-first web application designed to help users quickly generate <strong>UPI payment links</strong> and <strong>QR codes</strong> for receiving payments. This application was built for personal and small business use.
+      </p>
+      <p>
+        These Terms and Conditions, together with our Privacy Policy below, form a legally binding agreement between <strong>you</strong> (the user) and the <strong>creator/owner</strong> of Imran X Dynamic (referred to as "we", "us", or "our").
+      </p>
+      <div class="highlight-box">
+        <strong>🔑 Simple Summary:</strong> Imran X Dynamic is a free tool that generates UPI payment links and QR codes. All your personal data stays on your own device. We do not collect, store, or sell your information.
+      </div>
+      <p>
+        This application is hosted on the web and is accessible via any modern browser on mobile, tablet, or desktop devices. It is provided as-is, for free, with no warranties of any kind.
+      </p>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       SECTION 2 — Acceptance of Terms
+  ================================================================ -->
+  <div class="doc-section" id="sec-2">
+    <div class="section-header">
+      <div class="section-num">02</div>
+      <div class="section-heading-wrap">
+        <div class="section-tag">Terms &amp; Conditions</div>
+        <div class="section-heading">Acceptance of Terms</div>
+      </div>
+    </div>
+    <div class="doc-body">
+      <p>
+        By opening, accessing, or using Imran X Dynamic in any way, you confirm that you have <strong>read, understood, and agreed</strong> to these Terms and Conditions and our Privacy Policy.
+      </p>
+      <div class="highlight-box warn">
+        ⚠️ <strong>If you do not agree</strong> with any part of these terms, you must immediately stop using this application.
+      </div>
+      <p>You confirm that you:</p>
+      <ul class="doc-list check">
+        <li>Are at least <strong>18 years of age</strong>, or using this application under adult supervision.</li>
+        <li>Have the <strong>legal authority</strong> to enter into this agreement.</li>
+        <li>Will use this application only for <strong>lawful purposes</strong>.</li>
+        <li>Will not misuse or attempt to hack, reverse engineer, or exploit this application.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       SECTION 3 — What This App Does
+  ================================================================ -->
+  <div class="doc-section" id="sec-3">
+    <div class="section-header">
+      <div class="section-num">03</div>
+      <div class="section-heading-wrap">
+        <div class="section-tag">Terms &amp; Conditions</div>
+        <div class="section-heading">What This Application Does</div>
+      </div>
+    </div>
+    <div class="doc-body">
+      <p>
+        Imran X Dynamic provides the following core features:
+      </p>
+
+      <div class="doc-table-wrap">
+        <table class="doc-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>🔐 Secure Login</strong></td>
+              <td>Password-protected access screen to prevent unauthorized use. Features a progressive lockout system after failed attempts.</td>
+            </tr>
+            <tr>
+              <td><strong>👤 User Profile</strong></td>
+              <td>One-time setup to save your name and UPI ID locally on your browser. These are auto-loaded on future visits.</td>
+            </tr>
+            <tr>
+              <td><strong>🔗 UPI Link Generator</strong></td>
+              <td>Creates a standard UPI deep-link in the format <span class="code-inline">upi://pay?pa=...&pn=...&am=...&cu=INR</span> based on your details and entered amount.</td>
+            </tr>
+            <tr>
+              <td><strong>📲 QR Code Generator</strong></td>
+              <td>Generates a scannable QR image using a third-party API (api.qrserver.com) encoding your UPI link.</td>
+            </tr>
+            <tr>
+              <td><strong>📤 Share Feature</strong></td>
+              <td>Uses the browser's native Web Share API to share your UPI link or QR code via WhatsApp, Telegram, SMS, or any installed app.</td>
+            </tr>
+            <tr>
+              <td><strong>📋 Copy Feature</strong></td>
+              <td>Copies the generated UPI link to your clipboard with a single tap.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="highlight-box success">
+        ✅ <strong>No payment processing happens inside this app.</strong> This app only <em>generates</em> UPI links and QR codes. Actual transactions occur through your bank or UPI-enabled payment app (PhonePe, Google Pay, Paytm, etc.).
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       SECTION 4 — User Responsibilities
+  ================================================================ -->
+  <div class="doc-section" id="sec-4">
+    <div class="section-header">
+      <div class="section-num">04</div>
+      <div class="section-heading-wrap">
+        <div class="section-tag">Terms &amp; Conditions</div>
+        <div class="section-heading">User Responsibilities &amp; Acceptable Use</div>
+      </div>
+    </div>
+    <div class="doc-body">
+      <p>As a user of this application, you agree to use it responsibly and ethically. The following are <strong>not permitted</strong>:</p>
+
+      <ul class="doc-list cross">
+        <li>Using this app to <strong>generate fraudulent UPI links</strong> intended to deceive or scam others.</li>
+        <li><strong>Sharing misleading QR codes</strong> that misrepresent the payee or amount.</li>
+        <li>Attempting to <strong>bypass the security/password screen</strong> through automated tools, bots, or brute force.</li>
+        <li>Using this app for <strong>money laundering</strong>, tax evasion, or any illegal financial activity.</li>
+        <li><strong>Reverse engineering</strong>, copying, modifying, or redistributing the source code without explicit permission.</li>
+        <li>Using the app to <strong>impersonate another person</strong> or business by entering their UPI ID without authorization.</li>
+      </ul>
+
+      <p>The following uses are <strong>permitted and encouraged</strong>:</p>
+      <ul class="doc-list check">
+        <li>Using the app to <strong>receive legitimate payments</strong> from friends, family, or customers.</li>
+        <li>Sharing your own UPI QR code for business or personal purposes.</li>
+        <li>Using the app offline (for saved data) or online (for QR generation).</li>
+        <li>Customizing your username and UPI ID at any time via the Settings panel.</li>
+      </ul>
+
+      <div class="highlight-box warn">
+        ⚠️ <strong>You are solely responsible</strong> for the accuracy of the UPI ID and name you enter. We are not liable for payments sent to incorrect or unauthorized UPI addresses.
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       SECTION 5 — Password & Security
+  ================================================================ -->
+  <div class="doc-section" id="sec-5">
+    <div class="section-header">
+      <div class="section-num">05</div>
+      <div class="section-heading-wrap">
+        <div class="section-tag">Terms &amp; Conditions</div>
+        <div class="section-heading">Password &amp; Security System</div>
+      </div>
+    </div>
+    <div class="doc-body">
+      <p>
+        This application is protected by a <strong>password entry screen</strong>. The purpose of this security screen is to prevent unauthorized persons from accessing your payment information and UPI details stored on your device.
+      </p>
+      <p><strong>How the security system works:</strong></p>
+      <ul class="doc-list">
+        <li>You are given <strong>3 attempts</strong> per cycle to enter the correct password.</li>
+        <li>After 3 wrong attempts, the app enters a <strong>lockout period</strong>.</li>
+        <li>Lockout durations increase progressively: <em>1st lock = 15 seconds</em>, <em>2nd lock = 30 seconds</em>, <em>3rd lock and beyond = 60 seconds</em>.</li>
+        <li>After each lockout expires, you receive <strong>3 new attempts</strong>.</li>
+        <li>The password and lockout state are tracked using <strong>browser localStorage</strong>.</li>
+      </ul>
+      <div class="highlight-box">
+        🔑 <strong>Important:</strong> The password for this application is stored as plain text in the JavaScript source code. This is a client-side application and therefore security depends on keeping the password confidential and not sharing the source code publicly with the password visible.
+      </div>
+      <p>
+        <strong>You are responsible for keeping your password confidential.</strong> Do not share the application password with untrusted individuals. If your device is lost or shared, anyone with access to the browser may be able to inspect the source code.
+      </p>
+    </div>
+  </div>
+
+  <!-- ====== PART 2: PRIVACY POLICY DIVIDER ====== -->
+  <div class="section-divider">
+    <span class="divider-label">Part II — Privacy Policy</span>
+  </div>
+
+  <!-- ================================================================
+       SECTION 6 — Data We Collect
+  ================================================================ -->
+  <div class="doc-section" id="sec-6">
+    <div class="section-header">
+      <div class="section-num">06</div>
+      <div class="section-heading-wrap">
+        <div class="section-tag">Privacy Policy</div>
+        <div class="section-heading">Information We Collect</div>
+      </div>
+    </div>
+    <div class="doc-body">
+      <p>
+        We believe in <strong>radical transparency</strong> about data. Here is a complete and honest list of all information this application handles:
+      </p>
+
+      <div class="doc-table-wrap">
+        <table class="doc-table">
+          <thead>
+            <tr>
+              <th>Data Type</th>
+              <th>What It Is</th>
+              <th>Where It Goes</th>
+              <th>Who Can See It</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Username</strong></td>
+              <td>The display name you enter during setup</td>
+              <td>Your device's localStorage only</td>
+              <td>Only you, on your device</td>
+            </tr>
+            <tr>
+              <td><strong>UPI ID</strong></td>
+              <td>Your UPI address (e.g. 9012345678@fam)</td>
+              <td>Your device's localStorage only</td>
+              <td>Only you, on your device</td>
+            </tr>
+            <tr>
+              <td><strong>Payment Amount</strong></td>
+              <td>The amount you type before generating a link</td>
+              <td>Used temporarily in memory only</td>
+              <td>Not stored anywhere</td>
+            </tr>
+            <tr>
+              <td><strong>Lock State</strong></td>
+              <td>Tracks if the app is locked and for how long</td>
+              <td>Your device's localStorage only</td>
+              <td>Only your browser</td>
+            </tr>
+            <tr>
+              <td><strong>Lock Count</strong></td>
+              <td>Number of times lockout has been triggered</td>
+              <td>Your device's localStorage only</td>
+              <td>Only your browser</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="highlight-box success">
+        ✅ <strong>We do NOT collect:</strong> your IP address, location, device ID, browser fingerprint, usage analytics, cookies, or any personally identifiable information beyond what you voluntarily enter.
+      </div>
+
+      <p>
+        <strong>We do NOT use:</strong> Google Analytics, Facebook Pixel, any tracking scripts, server-side logging, or third-party data brokers.
+      </p>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       SECTION 7 — How Data Is Stored
+  ================================================================ -->
+  <div class="doc-section" id="sec-7">
+    <div class="section-header">
+      <div class="section-num">07</div>
+      <div class="section-heading-wrap">
+        <div class="section-tag">Privacy Policy</div>
+        <div class="section-heading">How &amp; Where Data Is Stored</div>
+      </div>
+    </div>
+    <div class="doc-body">
+      <p>
+        All data in Imran X Dynamic is stored exclusively using <strong>browser localStorage</strong> — a standard web technology that stores data <em>only on your device</em>, in your browser.
+      </p>
+
+      <p><strong>Key facts about localStorage storage:</strong></p>
+      <ul class="doc-list">
+        <li>Data is stored <strong>only on the specific device and browser</strong> you are using.</li>
+        <li>Data is <strong>never sent to any server</strong> operated by us.</li>
+        <li>Data <strong>persists across sessions</strong> — meaning if you close and reopen the browser, your name and UPI ID are still there.</li>
+        <li>Data is <strong>deleted if you clear your browser's data</strong>, uninstall the browser, or use the "Clear Site Data" function.</li>
+        <li>Data is <strong>not synced</strong> across devices. If you use this app on two different phones, each has its own separate data.</li>
+        <li>Other websites and apps <strong>cannot read</strong> your localStorage data. It is sandboxed per domain.</li>
+      </ul>
+
+      <div class="highlight-box info">
+        ℹ️ <strong>To delete your data at any time:</strong> Go to your browser Settings → Privacy &amp; Security → Clear browsing data → Site Data → Find this website → Clear. This will erase all saved username, UPI ID, and lock state data.
+      </div>
+
+      <p>
+        The <strong>localStorage keys</strong> used by this application are:
+      </p>
+      <ul class="doc-list">
+        <li><span class="code-inline">ixd_username</span> — stores your display name</li>
+        <li><span class="code-inline">ixd_upiid</span> — stores your UPI ID</li>
+        <li><span class="code-inline">ixd_locked_until</span> — stores the timestamp of the lockout expiry</li>
+        <li><span class="code-inline">ixd_lock_count</span> — stores how many times lockout has occurred</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       SECTION 8 — UPI & Payments
+  ================================================================ -->
+  <div class="doc-section" id="sec-8">
+    <div class="section-header">
+      <div class="section-num">08</div>
+      <div class="section-heading-wrap">
+        <div class="section-tag">Privacy Policy</div>
+        <div class="section-heading">UPI Links, Payments &amp; Financial Data</div>
+      </div>
+    </div>
+    <div class="doc-body">
+      <p>
+        This application generates <strong>UPI deep links</strong> — a standard format recognized by all UPI-enabled apps in India (Google Pay, PhonePe, Paytm, BHIM, etc.). These links are generated entirely within your browser using JavaScript.
+      </p>
+
+      <p><strong>How UPI links are generated:</strong></p>
+      <ul class="doc-list">
+        <li>We take your <em>UPI ID</em>, <em>name</em>, and <em>amount</em> that you provide.</li>
+        <li>We assemble them into the standard UPI URL format: <span class="code-inline">upi://pay?pa={UPI_ID}&pn={NAME}&am={AMOUNT}&cu=INR</span></li>
+        <li>This assembly happens <strong>entirely in your browser</strong>. No server is involved.</li>
+        <li>The generated link is then either: displayed as text, encoded into a QR code (via external API — see Section 9), or shared via your device's share function.</li>
+      </ul>
+
+      <div class="highlight-box warn">
+        ⚠️ <strong>Important Financial Disclaimer:</strong> Imran X Dynamic does NOT process, initiate, facilitate, or authorize any financial transaction. We are purely a <em>link and QR generation tool</em>. Any payment made using a generated UPI link is processed entirely by the receiving bank and UPI infrastructure (NPCI). We have zero involvement in, or liability for, any transaction.
+      </div>
+
+      <p>
+        <strong>We strongly advise:</strong>
+      </p>
+      <ul class="doc-list check">
+        <li>Always double-check your UPI ID before sharing a generated link or QR.</li>
+        <li>Only share your payment QR with people you intend to receive payment from.</li>
+        <li>Never enter someone else's UPI ID without their explicit consent.</li>
+        <li>Do not use this app to facilitate any unauthorized or fraudulent transaction.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       SECTION 9 — QR Codes & Third-Party APIs
+  ================================================================ -->
+  <div class="doc-section" id="sec-9">
+    <div class="section-header">
+      <div class="section-num">09</div>
+      <div class="section-heading-wrap">
+        <div class="section-tag">Privacy Policy</div>
+        <div class="section-heading">QR Code Generation &amp; Third-Party APIs</div>
+      </div>
+    </div>
+    <div class="doc-body">
+      <p>
+        When you click <strong>"Generate QR Code"</strong>, this application sends a request to a third-party API service:
+      </p>
+      <div class="highlight-box">
+        🌐 <strong>QR API Used:</strong> <span class="code-inline">https://api.qrserver.com/v1/create-qr-code/</span><br/>
+        <br/>
+        Operated by: <strong>goQR.me</strong> — a public, free QR code generation service.
+      </div>
+
+      <p>
+        <strong>What data is sent to this API:</strong>
+      </p>
+      <ul class="doc-list">
+        <li>The <strong>encoded UPI link</strong> (which contains your UPI ID, name, and amount) is sent as a URL parameter to the QR API server.</li>
+        <li>The server generates a QR image from this data and returns it to your browser.</li>
+        <li>The <strong>requested image size</strong> (300×300 pixels) and <strong>error correction level</strong> (M) are also sent.</li>
+      </ul>
+
+      <div class="highlight-box warn">
+        ⚠️ <strong>Please be aware:</strong> When you generate a QR code, your UPI ID, name, and the specified amount are transmitted as URL query parameters to the goQR.me server. This is necessary for them to create the QR image. Their server may log request data per their own privacy policy. Visit <span class="code-inline">goqr.me</span> to review their privacy practices.
+      </div>
+
+      <p>
+        <strong>We have no affiliation with or control over goQR.me.</strong> We are not responsible for how they handle request data. If you have concerns, you may choose not to use the QR generation feature and instead use only the UPI Link sharing feature, which involves no third-party servers.
+      </p>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       SECTION 10 — Advertisements (Adsterra)
+  ================================================================ -->
+  <div class="doc-section" id="sec-10">
+    <div class="section-header">
+      <div class="section-num">10</div>
+      <div class="section-heading-wrap">
+        <div class="section-tag">Privacy Policy</div>
+        <div class="section-heading">Advertisements &amp; Adsterra</div>
+      </div>
+    </div>
+    <div class="doc-body">
+      <p>
+        This application may display <strong>banner advertisements</strong> served by <strong>Adsterra</strong>, a third-party advertising network. Advertisements help support the continued free availability of this application.
+      </p>
+
+      <p><strong>Ad placements in this app:</strong></p>
+      <ul class="doc-list">
+        <li><em>Security Screen Banner</em> — displayed below the password form on the login screen.</li>
+        <li><em>QR Result Banner</em> — displayed below the generated QR code caption.</li>
+      </ul>
+
+      <p><strong>What Adsterra may collect when serving ads:</strong></p>
+      <ul class="doc-list">
+        <li>Your approximate <strong>IP address and geographic location</strong> (country/city level).</li>
+        <li><strong>Browser type and version</strong> (e.g. Chrome, Safari).</li>
+        <li><strong>Device type</strong> (mobile, tablet, desktop) and operating system.</li>
+        <li><strong>Referrer URL</strong> — the page you were on when the ad loaded.</li>
+        <li><strong>Cookies and similar tracking identifiers</strong> for ad personalization and frequency capping.</li>
+      </ul>
+
+      <div class="highlight-box info">
+        ℹ️ We, the operators of Imran X Dynamic, do <strong>not receive, access, or store</strong> any of the data collected by Adsterra's ad scripts. That data flows directly between your browser and Adsterra's servers. For full details, please review: <span class="code-inline">adsterra.com/privacy-policy</span>
+      </div>
+
+      <p>
+        <strong>Your choices regarding ads:</strong>
+      </p>
+      <ul class="doc-list">
+        <li>You may use a browser-based <strong>ad blocker</strong> to prevent ad scripts from loading.</li>
+        <li>You can opt out of personalized advertising via your browser settings or through the <em>Digital Advertising Alliance</em> at <span class="code-inline">optout.aboutads.info</span>.</li>
+      </ul>
+
+      <p>
+        By using this application with ads enabled, you acknowledge that Adsterra's own Privacy Policy governs the data they collect, and you consent to that data processing as described therein.
+      </p>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       SECTION 11 — Liability & Disclaimers
+  ================================================================ -->
+  <div class="doc-section" id="sec-11">
+    <div class="section-header">
+      <div class="section-num">11</div>
+      <div class="section-heading-wrap">
+        <div class="section-tag">Terms &amp; Conditions</div>
+        <div class="section-heading">Limitation of Liability &amp; Disclaimers</div>
+      </div>
+    </div>
+    <div class="doc-body">
+      <p>
+        <strong>Imran X Dynamic is provided "as is"</strong> without warranties of any kind, either expressed or implied. We do not warrant that:
+      </p>
+      <ul class="doc-list cross">
+        <li>The application will always be available, uninterrupted, or error-free.</li>
+        <li>QR code generation will always succeed (it depends on the third-party API being available).</li>
+        <li>The Web Share API will function on all devices or browsers.</li>
+        <li>UPI links generated will be accepted by all payment apps in all scenarios.</li>
+      </ul>
+
+      <p><strong>We are not responsible for:</strong></p>
+      <ul class="doc-list cross">
+        <li>Any <strong>financial loss</strong> resulting from incorrect UPI ID entry or fraudulent use.</li>
+        <li>Payment failures, transaction errors, or disputes between payer and payee.</li>
+        <li>Data loss due to browser data clearing, device reset, or application updates.</li>
+        <li>Any harm arising from misuse of this application in violation of these terms.</li>
+        <li>Downtime of third-party services (goQR.me, Adsterra).</li>
+      </ul>
+
+      <div class="highlight-box warn">
+        ⚠️ <strong>Maximum Liability:</strong> To the fullest extent permitted by applicable law, our total liability to you for any claim arising from use of this application shall be <strong>zero (₹0)</strong>, as this is a free service provided without commercial guarantee.
+      </div>
+
+      <p>
+        Nothing in these terms limits liability for fraud, death, or personal injury caused by negligence, where such limitation is not permitted by law.
+      </p>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       SECTION 12 — Intellectual Property
+  ================================================================ -->
+  <div class="doc-section" id="sec-12">
+    <div class="section-header">
+      <div class="section-num">12</div>
+      <div class="section-heading-wrap">
+        <div class="section-tag">Terms &amp; Conditions</div>
+        <div class="section-heading">Intellectual Property Rights</div>
+      </div>
+    </div>
+    <div class="doc-body">
+      <p>
+        The design, code, visual assets, animations, user interface, and all original content within Imran X Dynamic are the intellectual property of the application's creator.
+      </p>
+
+      <ul class="doc-list">
+        <li>You may <strong>use this application</strong> for personal or business payment link generation.</li>
+        <li>You may <strong>not copy, redistribute, resell, or publish</strong> the source code of this application without written permission.</li>
+        <li>You may <strong>not rebrand</strong> this application and present it as your own product without authorization.</li>
+        <li>You may <strong>share generated UPI links and QR codes</strong> freely — those are your data, generated from your information.</li>
+      </ul>
+
+      <p>
+        Third-party technologies used in this app (Google Fonts, goQR.me API, Adsterra) remain the intellectual property of their respective owners and are governed by their own licenses and terms.
+      </p>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       SECTION 13 — Changes to Terms
+  ================================================================ -->
+  <div class="doc-section" id="sec-13">
+    <div class="section-header">
+      <div class="section-num">13</div>
+      <div class="section-heading-wrap">
+        <div class="section-tag">Terms &amp; Conditions</div>
+        <div class="section-heading">Changes to These Terms</div>
+      </div>
+    </div>
+    <div class="doc-body">
+      <p>
+        We reserve the right to <strong>update, modify, or replace</strong> any part of these Terms and Conditions and Privacy Policy at any time. Changes will be effective immediately upon being posted on this page.
+      </p>
+      <p>
+        We will update the <em>"Last Updated"</em> date at the top of this document to reflect any changes. It is your responsibility to review these terms periodically.
+      </p>
+      <div class="highlight-box">
+        📌 <strong>Continued use</strong> of the application after any changes to these terms constitutes your acceptance of the revised terms.
+      </div>
+      <p>
+        Major changes (such as changes to what data is collected or how it is used) will be communicated via an in-app notice when reasonably possible.
+      </p>
+    </div>
+  </div>
+
+  <!-- ====== PART 3: CONTACT DIVIDER ====== -->
+  <div class="section-divider">
+    <span class="divider-label">Contact &amp; Support</span>
+  </div>
+
+  <!-- ================================================================
+       SECTION 14 — Contact
+  ================================================================ -->
+  <div class="doc-section" id="sec-14">
+    <div class="section-header">
+      <div class="section-num">14</div>
+      <div class="section-heading-wrap">
+        <div class="section-tag">Support</div>
+        <div class="section-heading">Governing Law &amp; Contact Information</div>
+      </div>
+    </div>
+    <div class="doc-body">
+      <p>
+        These Terms and Conditions are governed by and construed in accordance with the laws of <strong>India</strong>, specifically applicable regulations under the <em>Information Technology Act, 2000</em> and the <em>UPI framework established by NPCI (National Payments Corporation of India)</em>.
+      </p>
+      <p>
+        Any disputes arising from the use of this application shall be subject to the exclusive jurisdiction of courts in <strong>India</strong>.
+      </p>
+      <p>
+        This policy also aligns with relevant provisions of:
+      </p>
+      <ul class="doc-list">
+        <li><strong>Information Technology (Reasonable Security Practices) Rules, 2011</strong></li>
+        <li><strong>Personal Data Protection principles</strong> as applicable in India</li>
+        <li><strong>RBI Guidelines</strong> on digital payment security awareness</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact Card -->
+  <div class="contact-card">
+    <div class="contact-icon">📬</div>
+    <h3>Questions or Concerns?</h3>
+    <p>
+      If you have any questions about these Terms, the Privacy Policy, or how your data is handled, please reach out. We aim to respond within 48 hours.
+    </p>
+    <a href="mailto:support@imranxdynamic.com" class="contact-email">
+      📧 support@imranxdynamic.com
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2025 <strong>Imran X Dynamic</strong>. All rights reserved.<br/>
+      These documents were last updated in <strong>March 2025</strong>.<br/>
+      <span style="font-size:0.72rem;">This is a client-side web application. No server. No tracking. No nonsense.</span>
+    </p>
+  </footer>
+
+</div><!-- /.page-wrapper -->
+
+<script>
+  // Scroll-to-top button visibility
+  const scrollBtn = document.getElementById('scroll-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.add('visible');
+    } else {
+      scrollBtn.classList.remove('visible');
+    }
+  });
+
+  // Smooth highlight on hash navigation
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Pulse highlight
+        target.style.borderColor = 'rgba(212,160,23,0.55)';
+        target.style.boxShadow = '0 0 0 3px rgba(212,160,23,0.15), 0 8px 32px rgba(5,14,42,0.6)';
+        setTimeout(() => {
+          target.style.borderColor = '';
+          target.style.boxShadow = '';
+        }, 1800);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
